@@ -20,7 +20,7 @@ Output is a trimmed ```.fastq``` file.
 In this step, long reads were assembled and refined using short reads to construct the genome
 ```module load usearch```  was ran to load the tool into the enivironmnet. 
 <pre>usearch -fastx_uniques SRR23892276_merged_trimmed.fastq -fastaout uniques.fa -sizeout</pre>
-Output is a .fa
+Output is a .fa file
 ### 3.4 OTU clustering at 97% identity, removal of singletons, chimera filtering
 <pre>usearch -cluster_otus uniques.fa -otus otus.fa -relabel OTU</pre>
 Output is otus.fa which contain high-quality OTU representative sequences
