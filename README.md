@@ -23,7 +23,10 @@ In this step, long reads were assembled and refined using short reads to constru
 Output is a .fa
 ### 3.4 OTU clustering at 97% identity, removal of singletons, chimera filtering
 <pre>usearch -cluster_otus uniques.fa -otus otus.fa -relabel OTU</pre>
+Output is otus.fa which contain high-quality OTU representative sequences
 ### 3.5 Map reads back to OTUs to calculate abundance table
+<pre>usearch -usearch_global SRR23892276_merged_trimmed.fastq -db otus.fa -id 0.97 -strand both -otutabout otu_table.txt</pre>
+Output is otu_table.txt is the OTU count matrix for downstream analysis auch as alpha-beta diversity and taxonomy assignment
 
 
 
