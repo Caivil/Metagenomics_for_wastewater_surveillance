@@ -1,4 +1,4 @@
-# metagenomics_for_wastewater_surveillance
+# Metagenomics_for_wastewater_surveillance
 ## 1.Data source
 The samples were collected from wastewater treatment plants located in Moscow, Russia.
 ## 2.Obtaining the data
