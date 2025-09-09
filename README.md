@@ -1,6 +1,6 @@
 # Metagenomics_for_wastewater_surveillance
 ## 1.Data source
-The samples were collected from wastewater treatment plants located in Moscow, Russia.
+The samples were collected from wastewater treatment plants located in Moscow, Russia (script stored in workflow/).
 ## 2.Obtaining the data
 The amplicon paired-end reads were obtaiend from the NCBI database with sratoolkit: ```module load sratoolkit.3.0.7``` then ```fasterq-dump SRR23892276 --split-files```. subsamples were used in this workflow.
 ## 3.Workflow
